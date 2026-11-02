@@ -1,0 +1,8 @@
+Log Analysis Report
+-------------------
+File: application/logs/application.log
+Total lines: 0
+ERROR count: 0
+WARNING count: 0
+
+Last 5 lines:
