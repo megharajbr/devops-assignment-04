@@ -22,6 +22,7 @@ echo "Date and Time: $(date)"
 
 # CPU core count
 echo "CPU Cores: $(nproc)"
+echo "Architecture: $(uname -m)"
 
 # Memory information
 echo "Total Memory: $(free -h | awk '/Mem:/ {print $2}')"
