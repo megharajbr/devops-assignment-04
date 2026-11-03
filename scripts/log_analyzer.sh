@@ -44,4 +44,4 @@ REPORT_FILE="$REPORT_DIR/log_report_$(date +%Y%m%d_%H%M%S).txt"
 } | tee "$REPORT_FILE"
 
 echo ""
-echo "Report saved to: $REPORT_FILE"
+echo "Report saved to: $REPORT_FILES"
