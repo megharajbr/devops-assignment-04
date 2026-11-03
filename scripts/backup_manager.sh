@@ -39,6 +39,8 @@ if tar -czf "$BACKUP_FILE" -C "$(dirname "$SOURCE_DIR")" "$(basename "$SOURCE_DI
     # Verify backup
     if tar -tzf "$BACKUP_FILE" > /dev/null; then
         echo "Backup successful: $BACKUP_FILE"
+        echo "Backup size: $(du -h "$BACKUP_FILE" | cut -f1)"
+        echo "Completed at: $(date '+%Y-%m-%d %H:%M:%S')"
     else
         echo "ERROR: Backup verification failed"
         exit 1
