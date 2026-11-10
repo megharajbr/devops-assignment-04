@@ -43,14 +43,14 @@ pipeline {
     stage('Backup') {
       steps {
          dir('devops-assignment-04') {
-        sh 'bash scripts/backup.sh'
+        sh 'bash scripts/backup_manager.sh'
          }
       }
     }
     stage('User_Reports') {
       steps {
          dir('devops-assignment-04') {
-        sh 'bash scripts/user_report.sh'
+        sh 'bash scripts/user_audit.sh'
          }
       }
     }
