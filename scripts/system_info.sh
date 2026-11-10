@@ -41,4 +41,4 @@ echo "Uptime: $(uptime -p)"
 
 echo "================================"
 echo "       REPORT COMPLETED"
-echo "=================
+echo "================="
