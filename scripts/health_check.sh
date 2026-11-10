@@ -1,4 +1,3 @@
-#hi
 #!/bin/bash
 # Purpose: Monitor Linux services
 # Author: Ubuntu User
@@ -19,7 +18,7 @@ PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 
 # Log file location
 LOG_FILE="$PROJECT_DIR/application/logs/service_status.log"
-
+mkdir -p "$(dirname "$LOG_FILE")"
 # Track service health
 ALL_HEALTHY=true
 
