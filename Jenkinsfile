@@ -4,6 +4,7 @@ pipeline {
   stages { 
     stage('Git Clone') {
       steps { 
+         deleteDir()
         sh ' git clone https://github.com/megharajbr/devops-assignment-04.git'
       }
     }
