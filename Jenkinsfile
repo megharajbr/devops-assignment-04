@@ -44,7 +44,7 @@ pipeline {
     stage('Backup') {
       steps {
          dir('devops-assignment-04') {
-        sh 'bash scripts/backup_manager.sh'
+        sh 'bash scripts/backup_manager.sh application'
          }
       }
     }
